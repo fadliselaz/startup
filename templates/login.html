@@ -1,0 +1,48 @@
+{%extends 'layout.html'%}
+
+    {%block container%}
+    <div class="container">
+        
+            <div class="header">
+                <h2>
+
+                    Selamat datang.. <br />
+                    silakan masukan username <br />
+                    dan password..
+                </h2>
+            </div>
+            
+       
+        <div class="form">
+            
+            <form action="" class="formInput" method="POST">
+                <input class="ip" type="text" name="username" autocomplete="off">
+                <input class="ip" type="password" name="password">
+                <button>Login</button>
+                <a class="small" href="{{url_for('shutDown')}}">
+
+                    <br />
+
+                    <small >Nyerah Bos..!!!</small>
+                   
+
+                </a>
+            </form>
+
+        </div>
+    </div>
+
+
+
+        {% if msg:%}
+        <script>
+            alert("username atau password salah..!!")
+        </script>
+        {% endif%}
+
+
+
+
+    {%endblock container%}
+
+

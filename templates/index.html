@@ -1,0 +1,15 @@
+{% extends 'layout.html'%}
+
+
+{% block container%}
+    <div class="container">
+        <h1>Selamat datang {{us}}</h1>
+        <form action="{{url_for('exit')}}" method="POST">
+            <button type="submit" >START COMPUTER</button>
+        </form>
+    </div>
+  
+    
+{% endblock %}
+
+
